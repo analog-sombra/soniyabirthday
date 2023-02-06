@@ -1,0 +1,211 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+       background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(163,175,243,1) 0%, rgba(220,182,232,1) 100.2% );
+        background-repeat: no-repeat;
+    background-size: cover;
+}
+.custom{
+    width: 100%;
+    height: 100vh;
+    /* background: hotpink; */
+    margin-top: 30px;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    justify-content: center;
+    align-items: flex-end;
+}
+.box{
+    width: 300px;
+    height: 400px;
+}
+.box1{
+    background-color: white;
+    position: relative;
+    left: 30%;
+    height: 235px;
+    width: 235px;
+    z-index: 20;
+    display: grid;
+    place-items: center;
+    box-shadow:8px 4px 23px 0px rgba(0, 0, 0, 0.3);
+    
+}
+.box2 > h1{
+    text-align: center;
+    margin: 60px auto 10px;
+    font-size: 30px;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 4px 13px 0px rgba(0, 0, 0, 0.2);
+    border: 3px solid #ff4d4d;
+    color: #ff3838;
+}
+.box2 p{
+    text-align: center;
+    font-size: 20px;
+    color: #17c0eb;
+    padding: 10px;
+}
+.box2{
+    background-color: white;
+    position: relative;
+    top: -1%;
+    border: 3px solid #17c0eb;
+    border-radius: 20px 13px 13px 13px;
+
+    
+}
+.test{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+.vid1{
+    width: 100%;
+    height: auto;
+    outline: none;
+    border: none;
+}
+.vid2{
+    width: 100%;
+    height: auto;
+    outline: none;
+    border: none;
+}
+.heading{
+    position: absolute;
+    top: 0;
+    font-size: 30px;
+    color: white;
+}
+.text1{
+    transform: translate(60vw,15vh);
+}
+.text2{
+    transform: translate(65vw,0);
+}
+.text3{
+    transform: translate(65vw,-10vh);
+}
+.text4{
+    transform: translate(65vw,-20vh);
+}
+.text5{
+    transform: translate(65vw,-35vh);
+}
+.text6{
+    transform: translate(65vw,-45vh);
+}
+.vid3{
+    width: 100%;
+    height: auto;
+    /* position: absolute; */
+    /* top: 100%; */
+}
+#canvas{
+    z-index: -10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.img1111 img{
+    margin-top: 80px;
+    width: 100%;
+}
+
+#img22{
+    mask-image: url(YOUR.png), 
+                    linear-gradient(-45deg,
+                        rgba(0,0,0,1) 20%, rgba(0,0,0,0) 50%);
+  mask-repeat: space;
+}
+.heading{
+    position: relative;
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+main{
+ 
+}
+
+
+.heart {
+    position: fixed;
+    top: -1vh;
+    color: red;
+    font-size: 1.2rem;
+    transform: translateY(0);
+    animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+    }
+}
+
+.box1 img{
+    width: 100%;
+    padding: 10px;
+}
+
+.loader{
+     position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            width: 100%;
+            height: 100%;
+            display: grid;
+            place-items: center;
+            background:lightblue;
+            
+        }
+        
+        .cir{
+            display: grid;
+            place-items: center;
+            color: white;
+            font-size: 40px;
+            width: 200px;
+            height: 200px;
+            background: #ee5253;
+            border-radius: 50%;
+
+            animation: ani 5s linear infinite alternate;
+        }
+        @keyframes ani{
+            0%{
+                box-sizing: none;
+                transform: rotate(0deg);
+            }
+            25%{
+                box-shadow: 0 0 0px 50px rgba(255, 255, 255, .4);
+            }
+            50%{
+                box-shadow: 0 0 0px 100px rgba(255, 255, 255, .4),
+            0 0 0px 50px rgba(255, 255, 255, .4);
+            }
+            75%{
+                box-shadow: 0 0 0px 150px rgba(255, 255, 255, .4),
+            0 0 0px 100px rgba(255, 255, 255, .4),
+            0 0 0px 50px rgba(255, 255, 255, .4);
+            }
+            100%{
+                box-shadow: 0 0 0px 200px rgba(255, 255, 255, .4),
+            0 0 0px 150px rgba(255, 255, 255, .4),
+            0 0 0px 100px rgba(255, 255, 255, .4),
+            0 0 0px 50px rgba(255, 255, 255, .4);
+            transform: rotate(360deg);
+            }
+        }
+        
+        
